@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: "MHei PRC Xbold";
+    @import url(https://db.onlinewebfonts.com/c/3ef68bb6ab62de046d53168a5bdfc1d3?family=MHei+PRC+Xbold);
+}
+
+:root {
+    --pale-blue : #ebf3fa;
+
+    --marine-blue : #234179;
+
+    --dark-red: #af443f;
+
+    --dark-blue: #253a62;
+}
+
+
+.navbar {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 16px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navbar .left {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .a {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bold1 {
+    font-weight: bold;
+}
+
+
+
+
+
