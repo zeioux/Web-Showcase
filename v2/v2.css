@@ -1,0 +1,65 @@
+:root {
+    --pale-blue : #ebf3fa;
+    --marine-blue : #234179;
+    --dark-red: #af443f;
+    --dark-blue: #253a62;
+}
+
+body {
+    color: var(--dark-blue);
+}
+
+header {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 100vw /*on peut aussi mettre 100%, ça prend 100% de la page*/ ;
+    position: fixed; /*on fixe la barre*/
+    top: 0; left: 0; right: 0; /*on lui demande de se coller tout en haut de la page*/
+    display: flex; /*on essaie d'aligner tout*/
+    justify-content: space-between; /* on met les éloignes du parent*/
+    align-items: center; /*on aligne tout bienµ*/
+}
+
+nav a  {
+    color: var(--dark-blue);
+    text-decoration: none; /* retirer les lignes en dessous des nav*/
+    margin-left: 16px; /* je sais plus*/
+}
+
+nav a :hover {
+    font-weight: bold; /* mettre en gras*/
+    cursor: pointer; /* faire en sorte que ce soit le cliquable de la souris*/
+}
+
+#home img{
+    width: 560px;
+    height: 352px;
+}
+
+#home{
+    width: 90vw; /* google it*/
+    margin: 0 auto; /* permet de centrer sans utiliser flex*/
+    display: flex; /* pour display quoi*/
+    align-items: center; /* met l'image au centre*/
+    height: 100vh; /* le met aligné pour les X*/
+}
+
+button {
+    background: linear-gradient(var(--dark-red), var(--marine-blue));
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: solid 1px var(--dark-blue);
+    cursor: pointer;
+}
+
+img:first-child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
